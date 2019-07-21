@@ -1,11 +1,12 @@
 --====================================================================================
 -- #Author: Jonathan D @Gannon
+-- #Updated: Indominus
 -- #Version 2.0
 --====================================================================================
 
 math.randomseed(os.time())
 
---- Pour les numero du style XXX-XXXX
+--- For style numbers XXX-XXXX
 function getPhoneRandomNumber()
 	local numBase0 = math.random(100,999)
 	local numBase1 = math.random(0,9999)
