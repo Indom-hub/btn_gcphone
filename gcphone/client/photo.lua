@@ -1,4 +1,5 @@
--- @author ??? Maybe Charli FeverRP
+-- @author ??? Maybe Charli [REDACTED]
+-- @updated Indominus
 
 phone = false
 phoneId = 0
