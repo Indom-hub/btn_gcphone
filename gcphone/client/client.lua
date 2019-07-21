@@ -1,5 +1,6 @@
 --====================================================================================
 -- #Author: Jonathan D @ Gannon
+-- #Updated: Indominus
 --====================================================================================
 
 -- Configuration
@@ -34,7 +35,7 @@ AddEventHandler('gcPhone:setEnableApp', function(appName, enable)
 end)
 
 --====================================================================================
---  Gestion des appels fixe
+--  Fixed call management
 --====================================================================================
 
 function startFixeCall (fixeNumber)
@@ -65,7 +66,7 @@ AddEventHandler("gcPhone:notifyFixePhoneChange", function(_PhoneInCall)
 end)
 
 --[[
-  Affiche les imformations quant le joueurs est proche d'un fixe
+  Displays information when the player is close to a fixed
 --]]
 function showFixePhoneHelper (coords)
     for number, data in pairs(FixePhone) do
@@ -261,7 +262,7 @@ function requestAllContact()
 end
 
 --====================================================================================
---  Function client | Appels
+--  Function client | Calls
 --====================================================================================
 
 local inCall = false
@@ -331,7 +332,7 @@ end
 
 
 --====================================================================================
---  Event NUI - Appels
+--  Event NUI - Calls
 --====================================================================================
 function startCall (phone_number, rtcOffer, extraData)
     TriggerServerEvent('gcPhone:startCall', phone_number, rtcOffer, extraData)
@@ -516,7 +517,7 @@ end)
 
 
 ----------------------------------
----------- GESTION APPEL ---------
+---------- CALL MANAGEMENT ---------
 ----------------------------------
 RegisterNUICallback('appelsDeleteHistorique', function (data, cb)
     appelsDeleteHistorique(data.numero)
@@ -529,7 +530,7 @@ end)
 
 
 ----------------------------------
----------- GESTION VIA WEBRTC ----
+---------- MANAGEMENT VIA WEBRTC ----
 ----------------------------------
 AddEventHandler('onClientResourceStart', function(res)
     DoScreenFadeIn(300)
