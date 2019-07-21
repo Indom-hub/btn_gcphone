@@ -125,7 +125,7 @@
       "inHomePage": false
     },
     {
-      "name": "Bourse",
+      "name": "Stocks",
       "icons": "/html/static/img/icons_app/bourse.png",
       "routeName": "bourse",
       "enabled": false
@@ -136,7 +136,7 @@
       "routeName": "photo"
     },
     {
-      "name": "Dark Chat",
+      "name": "Dark Web",
       "icons": "/html/static/img/icons_app/tchat.png",
       "routeName": "tchat"
     },
