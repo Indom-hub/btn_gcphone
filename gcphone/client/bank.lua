@@ -4,7 +4,7 @@
 
 --[[
       Appeller SendNUIMessage({event = 'updateBankbalance', banking = xxxx})
-      à la connection & à chaque changement du compte
+      at connection & every time the account is changed
 --]]
 
 
